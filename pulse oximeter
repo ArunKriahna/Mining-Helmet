@@ -1,0 +1,23 @@
+   if(BPM>170 &&BPM!=0){
+      
+      digitalWrite(buzz,HIGH);
+      delay(500);
+      digitalWrite(buzz,LOW);
+      delay(500);
+      bot.sendMessage(CHAT_ID, "HIGH BPM");
+}
+   if(BPM<70 &&BPM!=0){
+      ;
+      digitalWrite(buzz,HIGH);
+      delay(500);
+      digitalWrite(buzz,LOW);
+      delay(500);
+      bot.sendMessage(CHAT_ID, "LOW BPM");
+}
+   if(SpO2<85 &&SpO2!=0){
+     
+      digitalWrite(buzz,HIGH);
+      delay(500);
+      digitalWrite(buzz,LOW);
+      delay(500); 
+      bot.sendMessage(CHAT_ID, "LOW SpO2");
