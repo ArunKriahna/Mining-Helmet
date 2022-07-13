@@ -1,0 +1,8 @@
+ if(digitalRead( flame)== LOW){
+     
+      digitalWrite(buzz,HIGH);
+      delay(100);
+      digitalWrite(buzz,LOW);
+      delay(100);
+      bot.sendMessage(CHAT_ID, "flame detected");
+}
