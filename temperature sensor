@@ -1,0 +1,16 @@
+if(t>45){
+     
+      digitalWrite(buzz,HIGH);
+      delay(500);
+      digitalWrite(buzz,LOW);
+      delay(500);
+      bot.sendMessage(CHAT_ID, "HIGH TEMPERATURE");
+}
+   if(t<15){
+    
+      digitalWrite(buzz,HIGH);
+      delay(500);
+      digitalWrite(buzz,LOW);
+      delay(500);
+       bot.sendMessage(CHAT_ID, "LOW TEMPERATURE");
+   }
